@@ -1,24 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Rating from '@material-ui/lab/Rating';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="coffee-rater">
+      Smak: <Rating name="smak" defaultValue={0} precision={0.5} />
+      Aromat: <Rating name="aromat" defaultValue={0} precision={0.5} />
+      Moc: <Rating name="moc" defaultValue={0} precision={0.5} />
+      
     </div>
   );
 }
